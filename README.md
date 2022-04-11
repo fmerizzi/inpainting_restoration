@@ -8,3 +8,12 @@ the general procedure is as follows:
 2) produce a proper mask for inpainting
 3) test traditional algorithms 
 4) test deep image prior technique 
+
+
+
+### preparing the mask 
+![preparing](https://github.com/fmerizzi/inpainting_restoration/blob/main/prepare.png)
+
+### producing the result 
+![result](https://github.com/fmerizzi/inpainting_restoration/blob/main/result.png)
+
