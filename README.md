@@ -15,5 +15,5 @@ the general procedure is as follows:
 ![preparing](https://github.com/fmerizzi/inpainting_restoration/blob/main/prepare.png)
 
 ### producing the result 
-![result](https://github.com/fmerizzi/inpainting_restoration/blob/main/result.png)
+![result](https://github.com/fmerizzi/inpainting_restoration/blob/main/detail2_full256.jpeg)
 
