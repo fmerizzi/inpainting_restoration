@@ -4,10 +4,11 @@ Affreschi restoration with inpainting
 As a part of an intership at I3S lab, I approach the task of affreschi digital restoration.
 the general goal of the project is as follows: 
 
-1) select high resolution pictures of the damaged affreschi 
+1) obtain high resolution pictures of the damaged affreschi 
 2) produce a proper mask for inpainting
-3) test traditional algorithms 
-4) test deep image prior technique 
+3) test traditional inpaiting algorithms 
+4) test deep image prior techniques, and compare it 
+5) attempt text restoration/calssification for damaged unknown text
 
 ### file list 
 
