@@ -24,8 +24,8 @@ I considered several approaches on the creation of the mask selecting damaged ar
 
 
 ### preparing the mask 
-![preparing](https://github.com/fmerizzi/inpainting_restoration/blob/main/prepare.png)
+![preparing](https://github.com/fmerizzi/inpainting_restoration/blob/main/images/prepare.png)
 
 ### producing the result 
-![result](https://github.com/fmerizzi/inpainting_restoration/blob/main/detail2_full256.jpeg)
+![result](https://github.com/fmerizzi/inpainting_restoration/blob/main/images/detail2_full256.jpeg)
 
