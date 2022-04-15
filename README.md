@@ -2,12 +2,17 @@
 Affreschi restoration with inpainting
 
 As a part of an intership at I3S lab, I approach the task of affreschi digital restoration.
-the general procedure is as follows: 
+the general goal of the project is as follows: 
 
 1) select high resolution pictures of the damaged affreschi 
 2) produce a proper mask for inpainting
 3) test traditional algorithms 
 4) test deep image prior technique 
+
+### file list 
+
+- inpainting_basicsComparison.ipynb, testing "traditional" methods for image inpainting, using opencv library. Fast Marching Method and algorithm proposed by Sapiro in 2001.
+- inpainting_deepImagePrior.ipynb, testing the deep image prior technique for image inpainting, with different architectures and parameter settings
 
 ### considerations on the making the of the mask 
 I considered several approaches on the creation of the mask selecting damaged areas, reported below:
