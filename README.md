@@ -15,7 +15,7 @@ the general goal of the project is as follows:
 - [inpainting_basicsComparison.ipynb](https://github.com/fmerizzi/inpainting_restoration/blob/main/inpainting_basicsComparison.ipynb), testing "traditional" methods for image inpainting, using opencv library. Fast Marching Method and algorithm proposed by Sapiro in 2001.
 - [inpainting_deepImagePrior.ipynb](https://github.com/fmerizzi/inpainting_restoration/blob/main/inpainting_deepImagePrior.ipynb), testing the deep image prior technique for image inpainting, with different architectures and parameter settings
 
-## considerations on the making the of the mask 
+## considerations on the making of the mask 
 I considered several approaches on the creation of the mask selecting damaged areas, reported below:
 
 1) __color based selection__, in this first attempt I selected a range of colors related to the damaged parts of the painting, however this selection proved to be too general, and its almost impossible to select only the damaged parts, producing masks that perform poorly.
