@@ -23,17 +23,22 @@ I considered several approaches on the creation of the mask selecting damaged ar
 3) __manual selection__, the final method used in our experiments is to simply create the masks manually, usually a paint tool, and making sure to completely cover the damage. The mask being slightly bigger than the damaged area proved not to be a problem for neural inpainting. 
 
 ## Deep image prior results
-- we tested and confimerd the author claim that skip connections are disruptive of the ability of the network to achieve inpainting, so in all our implementations we avoided this kin
+In deep image prior we work with the following loss, where x is the output of the generative network and x0 the original image. m represents a mask which cover the parts of the image that have to be inpainted, and the respective pixels are excluded from the loss. 
 
 <img src="https://render.githubusercontent.com/render/math?math=E(x,x_0) = \left \| (x,x_0) \odot m) \right \|">
 
-
-### animation sample
-![Lusuria, deep prior animation sample](https://github.com/fmerizzi/inpainting_restoration/blob/main/images/Lusuria_sample_gif.gif)
+Upon testing, we agree with the original author's claim that multiple skip connections are in general detriemental for the inpainting process.
+In our tests we focused on deep generative "hourglass" networks, and we are limited on network size only by computation power and available memory. 
 
 ### preparing the mask 
 ![preparing](https://github.com/fmerizzi/inpainting_restoration/blob/main/images/prepare.png)
 
 ### producing the result 
 ![result](https://github.com/fmerizzi/inpainting_restoration/blob/main/images/detail2_full256.jpeg)
+
+
+### animation sample
+![Lusuria, deep prior animation sample](https://github.com/fmerizzi/inpainting_restoration/blob/main/images/Lusuria_sample_gif.gif)
+
+
 
