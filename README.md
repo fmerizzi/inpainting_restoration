@@ -28,7 +28,7 @@ In deep image prior we work with the following loss, where x is the output of th
 <img src="https://render.githubusercontent.com/render/math?math=\Large E(x,x_0) = \left \| (x - x_0) \odot m) \right \|">
 
 Upon testing, we agree with the original author's claim that multiple skip connections are in general detriemental for the inpainting process.
-In our tests we focused on deep generative "hourglass" networks, and we are limited on network size only by computation power and available memory. 
+In our tests we focused on deep generative "hourglass" networks, and we are limited on network size only by computation power and available memory. However, from another point of view, we could argue that sometime we would like to restore on a "lower level of abstraction", for example in the case where the finest details are just noise or damage on the painting. In this cases, the use of skip connections could actually produce better results, not tampered by the small details we know being imperfections.
 
 ### Inpainting figurative details
 __original image, mask and combined version__
