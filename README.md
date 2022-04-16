@@ -25,20 +25,21 @@ I considered several approaches on the creation of the mask selecting damaged ar
 ## Deep image prior results
 In deep image prior we work with the following loss, where x is the output of the generative network and x0 the original image. m represents a mask which cover the parts of the image that have to be inpainted, and the respective pixels are excluded from the loss. 
 
-<img src="https://render.githubusercontent.com/render/math?math=E(x,x_0) = \left \| (x,x_0) \odot m) \right \|">
+<img src="https://render.githubusercontent.com/render/math?math=\Large E(x,x_0) = \left \| (x - x_0) \odot m) \right \|">
 
 Upon testing, we agree with the original author's claim that multiple skip connections are in general detriemental for the inpainting process.
 In our tests we focused on deep generative "hourglass" networks, and we are limited on network size only by computation power and available memory. 
 
-### preparing the mask 
+### Inpainting figurative details
+__original image, mask and combined version__
 ![preparing](https://github.com/fmerizzi/inpainting_restoration/blob/main/images/prepare.png)
-
-### producing the result 
+__inpainted result__
 ![result](https://github.com/fmerizzi/inpainting_restoration/blob/main/images/detail2_full256.jpeg)
 
 
 ### animation sample
 ![Lusuria, deep prior animation sample](https://github.com/fmerizzi/inpainting_restoration/blob/main/images/Lusuria_sample_gif.gif)
 
-
+### Inpainting text 
+todo
 
