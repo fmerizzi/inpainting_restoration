@@ -25,7 +25,7 @@ I considered several approaches on the creation of the mask selecting damaged ar
 ## Deep image prior results
 - we tested and confimerd the author claim that skip connections are disruptive of the ability of the network to achieve inpainting, so in all our implementations we avoided this kin
 
-<img src="https://render.githubusercontent.com/render/math?math=e^{i \pi} = -1">
+<img src="https://render.githubusercontent.com/render/math?math=E(x,x_0) = \left \| (x,x_0) \odot m) \right \|">
 
 
 ### animation sample
