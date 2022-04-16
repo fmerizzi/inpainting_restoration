@@ -32,8 +32,14 @@ In our tests we focused on deep generative "hourglass" networks, and we are limi
 
 ### Inpainting figurative details
 __original image, mask and combined version__
+
+
 ![preparing](https://github.com/fmerizzi/inpainting_restoration/blob/main/images/prepare.png)
+
+
 __inpainted result__
+
+
 ![result](https://github.com/fmerizzi/inpainting_restoration/blob/main/images/detail2_full256.jpeg)
 
 
