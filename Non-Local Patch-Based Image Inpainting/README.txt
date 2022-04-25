@@ -2,7 +2,9 @@
                  README
                       ━━━━━━━━━
 
-
+In my case I had to manually install pnglib and tifflib-dev packages to resolve inconsistencies ss
+                      
+                      
 Table of Contents
 ─────────────────
 
