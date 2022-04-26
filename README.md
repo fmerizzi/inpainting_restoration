@@ -55,6 +55,8 @@ In deep image prior we work with the following loss, where x is the output of th
 Upon testing, we agree with the original author's claim that multiple skip connections are in general detriemental for the inpainting process.
 In our tests we focused on deep generative "hourglass" networks, and we are limited on network size only by computation power and available memory. However, from another point of view, we could argue that sometime we would like to restore on a "lower level of abstraction", for example in the case where the finest details are just noise or damage on the painting. In this cases, the use of skip connections could actually produce better results, not tampered by the small details we know being imperfections.
 
+Regarding network architecture, we notice that full layers bring better results than the more conventional hourglass architecture. However, this come at the expense of computational time. 
+
 ### comparing skip connections against no skip connections
 For this test the network is an encoder-decoder structure made with 5 layers of downsample and 5 layers of upsample, all with a size of 256, with kernel size of 3x3 and stride of 1.
 
@@ -66,7 +68,7 @@ __full skip connections__
 
 ![preparing](https://github.com/fmerizzi/inpainting_restoration/blob/main/images/detail1_Lusuria_full256skip.png)
 
-As we can see, ther skip connection reduce the detail in the inpainted areas, but in our situation some "smoothing" is not as bad thing. 
+As we can see, ther skip connection reduce the detail in the inpainted areas, but in our situation some "smoothing" is not as bad thing. Hybrid approaches are also possible. 
 
 ### Inpainting figurative details
 __original image, mask and combined version__
@@ -74,9 +76,6 @@ __original image, mask and combined version__
 
 ![preparing](https://github.com/fmerizzi/inpainting_restoration/blob/main/images/prepare.png)
 
-![preparing](https://github.com/fmerizzi/inpainting_restoration/blob/main/images/prepare.png)
-
-![preparing](https://github.com/fmerizzi/inpainting_restoration/blob/main/images/prepare.png)
 
 
 __inpainted result__
