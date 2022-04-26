@@ -24,7 +24,7 @@ I considered several approaches on the creation of the mask selecting damaged ar
 
 __original image, mask and combined version__
 
-![preparing](https://github.com/fmerizzi/inpainting_restoration/blob/main/images/prepare.png)
+![preparing](https://github.com/fmerizzi/inpainting_restoration/blob/main/images/detail2_Sebastiano_maskAndOriginal.png)
 
 ## local methods 
 
@@ -66,16 +66,16 @@ For this test the network is an encoder-decoder structure made with 5 layers of 
 
 __no skip connection__
 
-![preparing](https://github.com/fmerizzi/inpainting_restoration/blob/main/images/detail3_full256_noSKip.jpeg)
+![preparing](https://github.com/fmerizzi/inpainting_restoration/blob/main/images/deep_prior/detail3_full256_noSKip.jpeg)
 
 __full skip connections__
 
-![preparing](https://github.com/fmerizzi/inpainting_restoration/blob/main/images/detail1_Lusuria_full256skip.png)
+![preparing](https://github.com/fmerizzi/inpainting_restoration/blob/main/images/deep_prior/detail1_Lusuria_full256skip.png)
 
 As we can see, ther skip connection reduce the detail in the inpainted areas, but in our situation some "smoothing" is not as bad thing. Hybrid approaches are also possible. 
 
 ### deep image prior animation sample
-![Lusuria, deep prior animation sample](https://github.com/fmerizzi/inpainting_restoration/blob/main/images/Lusuria_sample_gif.gif)
+![Lusuria, deep prior animation sample](https://github.com/fmerizzi/inpainting_restoration/blob/main/images/deep_prior/Lusuria_sample_gif.gif)
 
 ## general comparison
 
