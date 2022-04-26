@@ -80,7 +80,7 @@ As we can see, ther skip connection reduce the detail in the inpainted areas, bu
 
 __mask__
 
-![mask](https://github.com/fmerizzi/inpainting_restoration/blob/main/images/detail1_Lusuria_imageandmask.png)
+![mask](https://github.com/fmerizzi/inpainting_restoration/blob/main/images/detail1_lusuria_maskAndOriginal.png)
 
 __Telea's and Sapiro's__
 
