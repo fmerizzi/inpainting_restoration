@@ -25,10 +25,10 @@ I considered several approaches on the creation of the mask selecting damaged ar
 ## local methods 
 
 Alexandru Telea's method (fast marching)
-![preparing](https://github.com/fmerizzi/inpainting_restoration/blob/main/images/AlexandruTelea.png)
+![preparing](https://github.com/fmerizzi/inpainting_restoration/blob/main/images/local_algorithms/AlexandruTelea.png)
 
 Gulliermo Sapiro's algorithm (Navier-Stokes, Fluid Dynamics)
-![preparing](https://github.com/fmerizzi/inpainting_restoration/blob/main/images/Navier-Stokes.png)
+![preparing](https://github.com/fmerizzi/inpainting_restoration/blob/main/images/local_algorithms/Navier-Stokes.png)
 
 ## Deep image prior results
 In deep image prior we work with the following loss, where x is the output of the generative network and x0 the original image. m represents a mask which cover the parts of the image that have to be inpainted, and the respective pixels are excluded from the loss. 
