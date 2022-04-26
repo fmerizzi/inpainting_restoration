@@ -29,8 +29,15 @@ Alexandru Telea's method (fast marching)
 
 Gulliermo Sapiro's algorithm (Navier-Stokes, Fluid Dynamics)
 ![preparing](https://github.com/fmerizzi/inpainting_restoration/blob/main/images/local_algorithms/Navier-Stokes.png)
+## Non-Local Patch-Based Image Inpainting 
+- Minimize highly non-convex functional, it specifies that a good solution to the inpainting problem should be an image where each patch is very similiar to its nearest neighbour in the unoccluded area. Iterations are performed in a multi-scale framework which yields globally coherent results. 
 
-## Deep image prior results
+we want to minimize the following highly non-convex functional:
+<img src="https://render.githubusercontent.com/render/math?math=\Large E(u,\phi ) = \sum_{p\in N_p} d^2(W_p, W_{p+ \phi (p)})">
+with H patch, and p pixel of H. and d is the distance to its nearest neighbour in the unoccluded region. 
+
+
+## Deep image prior 
 In deep image prior we work with the following loss, where x is the output of the generative network and x0 the original image. m represents a mask which cover the parts of the image that have to be inpainted, and the respective pixels are excluded from the loss. 
 
 <img src="https://render.githubusercontent.com/render/math?math=\Large E(x,x_0) = \left \| (x - x_0) \odot m) \right \|">
