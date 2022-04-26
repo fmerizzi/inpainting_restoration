@@ -75,7 +75,7 @@ As we can see, ther skip connection reduce the detail in the inpainted areas, bu
 ![Lusuria, deep prior animation sample](https://github.com/fmerizzi/inpainting_restoration/blob/main/images/deep_prior/Lusuria_sample_gif.gif)
 
 ## general comparison
-In this section we compare all the previous methods. 
+In this section we compare all the previous methods. We can see that the patch approach is almost as good as deep image prior, and it achieves the results with a much lower computational cost. However, deep image prior is much more robust to artifacts, as can be clearly seen in the text cleaning example.
 
 ### Lusuria Detail 1 
 
