@@ -64,12 +64,9 @@ Regarding network architecture, we notice that full layers bring better results 
 ### comparing skip connections against no skip connections
 For this test the network is an encoder-decoder structure made with 5 layers of downsample and 5 layers of upsample, all with a size of 256, with kernel size of 3x3 and stride of 1.
 
-__no skip connection__
+__no skip connection (left) and full skip connections (right) __
 
 ![preparing](https://github.com/fmerizzi/inpainting_restoration/blob/main/images/deep_prior/detail1_full256_noSKip.jpeg)
-
-__full skip connections__
-
 ![preparing](https://github.com/fmerizzi/inpainting_restoration/blob/main/images/deep_prior/detail1_Lusuria_full256skip.png)
 
 As we can see, ther skip connection reduce the detail in the inpainted areas, but in our situation some "smoothing" is not as bad thing. Hybrid approaches are also possible. 
@@ -93,26 +90,7 @@ __Telea's and Sapiro's__
 __Non-Local Patch and Deep Prior__
 
 ![patch](https://github.com/fmerizzi/inpainting_restoration/blob/main/images/patch/detail1_lusuria_patch.png)
-![prior](https://github.com/fmerizzi/inpainting_restoration/blob/main/images/detail1_Lusuria_full256skip.png)
-
-
-
-__Sapiro's local algorithm__
-
-![saprio](https://github.com/fmerizzi/inpainting_restoration/blob/main/images/local_algorithms/Sapiro_Lusuria.png)
-![saprio](https://github.com/fmerizzi/inpainting_restoration/blob/main/images/local_algorithms/Sapiro_text.png)
-
-__Non-Local Patch based image inpainting__
-
-![patch](https://github.com/fmerizzi/inpainting_restoration/blob/main/images/patch/detail1_lusuria_patch.png)
-![patch](https://github.com/fmerizzi/inpainting_restoration/blob/main/images/patch/detail3_sebatiano_patch.png)
-
-
-__Deep prior with skip__
-
-![prior](https://github.com/fmerizzi/inpainting_restoration/blob/main/images/detail1_Lusuria_full256skip.png)
-![prior](https://github.com/fmerizzi/inpainting_restoration/blob/main/images/detail3_full256_deepprior.jpeg)
-
+![prior](https://github.com/fmerizzi/inpainting_restoration/blob/main/images/deep_prior/detail1_Lusuria_full256skip.png)
 
 
 
