@@ -22,6 +22,10 @@ I considered several approaches on the creation of the mask selecting damaged ar
 2) __"magic wand" method__, in this supervised method we select both a color sample and a coordinate, and we expand the selection from the coordinate to the adjacent pixels that match our color sample to a certain degree. The quality of this selection is much greater than the simple color based selection, and the results are convincing. However, upon testing, the quality of the inpainting was poor. We consider this problem to arise because this method leave "exposed" the edges of the patch, the in-between areas where the color changes; this areas are then used by the network to recreate the patch. This results suggest that the best method to create masks is to __completely cover the damaged area__
 3) __manual selection__, the final method used in our experiments is to simply create the masks manually, usually a paint tool, and making sure to completely cover the damage. The mask being slightly bigger than the damaged area proved not to be a problem for neural inpainting. 
 
+__original image, mask and combined version__
+
+![preparing](https://github.com/fmerizzi/inpainting_restoration/blob/main/images/prepare.png)
+
 ## local methods 
 
 Alexandru Telea's method (fast marching)
@@ -70,23 +74,8 @@ __full skip connections__
 
 As we can see, ther skip connection reduce the detail in the inpainted areas, but in our situation some "smoothing" is not as bad thing. Hybrid approaches are also possible. 
 
-### Inpainting figurative details
-__original image, mask and combined version__
-
-
-![preparing](https://github.com/fmerizzi/inpainting_restoration/blob/main/images/prepare.png)
-
-
-
-__inpainted result__
-
-
-![result](https://github.com/fmerizzi/inpainting_restoration/blob/main/images/detail2_full256.jpeg)
-
-
-### animation sample
+### deep image prior animation sample
 ![Lusuria, deep prior animation sample](https://github.com/fmerizzi/inpainting_restoration/blob/main/images/Lusuria_sample_gif.gif)
 
-### Inpainting text 
-todo
+## general comparison
 
