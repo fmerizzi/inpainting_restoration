@@ -66,7 +66,7 @@ For this test the network is an encoder-decoder structure made with 5 layers of 
 
 __no skip connection__
 
-![preparing](https://github.com/fmerizzi/inpainting_restoration/blob/main/images/deep_prior/detail3_full256_noSKip.jpeg)
+![preparing](https://github.com/fmerizzi/inpainting_restoration/blob/main/images/deep_prior/detail1_full256_noSKip.jpeg)
 
 __full skip connections__
 
@@ -81,6 +81,9 @@ As we can see, ther skip connection reduce the detail in the inpainted areas, bu
 
 ### Lusuria Detail 
 
+__mask__
+
+![mask](https://github.com/fmerizzi/inpainting_restoration/blob/main/images/detail1_Lusuria_imageandmask.png)
 
 __Telea's and Sapiro's__
 
@@ -92,7 +95,7 @@ __Non-Local Patch and Deep Prior__
 ![patch](https://github.com/fmerizzi/inpainting_restoration/blob/main/images/patch/detail1_lusuria_patch.png)
 ![prior](https://github.com/fmerizzi/inpainting_restoration/blob/main/images/detail1_Lusuria_full256skip.png)
 
-![telea](https://github.com/fmerizzi/inpainting_restoration/blob/main/images/local_algorithms/Telea_text.png)
+
 
 __Sapiro's local algorithm__
 
