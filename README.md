@@ -29,6 +29,7 @@ Alexandru Telea's method (fast marching)
 
 Gulliermo Sapiro's algorithm (Navier-Stokes, Fluid Dynamics)
 ![preparing](https://github.com/fmerizzi/inpainting_restoration/blob/main/images/local_algorithms/Navier-Stokes.png)
+
 ## Non-Local Patch-Based Image Inpainting 
 - Minimize highly non-convex functional, it specifies that a good solution to the inpainting problem should be an image where each patch is very similiar to its nearest neighbour in the unoccluded area. Iterations are performed in a multi-scale framework which yields globally coherent results. 
 
@@ -42,8 +43,9 @@ The solution is obtained via iterated alternating minimization as well as multi 
 1) nearest neighbour search 
 2) image reconstruction
 
+In calculating the distance they introduce a factor that represent pixel distribution, with the goal to distinguish between textured and non-textured data. Initialization schemes proved to be crucial, the author's applied a "onion peel" initialization made of layers 1 pixel wide, unitil the end of the occluded area. 
 
-
+Default patch size id 7x7 pixels, with the outhor suggesting its optimal image size to be from 512x512 to 800x800. 
 
 ## Deep image prior 
 In deep image prior we work with the following loss, where x is the output of the generative network and x0 the original image. m represents a mask which cover the parts of the image that have to be inpainted, and the respective pixels are excluded from the loss. 
