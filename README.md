@@ -75,8 +75,9 @@ As we can see, ther skip connection reduce the detail in the inpainted areas, bu
 ![Lusuria, deep prior animation sample](https://github.com/fmerizzi/inpainting_restoration/blob/main/images/deep_prior/Lusuria_sample_gif.gif)
 
 ## general comparison
+In this section we compare all the previous methods. 
 
-### Lusuria Detail 
+### Lusuria Detail 1 
 
 __mask__
 
@@ -91,6 +92,22 @@ __Non-Local Patch (left) and Deep Prior (right)__
 
 ![patch](https://github.com/fmerizzi/inpainting_restoration/blob/main/images/patch/detail1_lusuria_patch.png)
 ![prior](https://github.com/fmerizzi/inpainting_restoration/blob/main/images/deep_prior/detail1_Lusuria_full256skip.png)
+
+### San Sebastiano Detail 2 
+
+__mask__
+
+![mask](https://github.com/fmerizzi/inpainting_restoration/blob/main/images/detail2_Sebastiano_maskAndOriginal.png)
+
+__Telea's (left) and Sapiro's (right)__
+
+![telea](https://github.com/fmerizzi/inpainting_restoration/blob/main/images/local_algorithms/Telea_Sebastiano_detail2.png)
+![telea](https://github.com/fmerizzi/inpainting_restoration/blob/main/images/local_algorithms/Telea_Sebastiano_detail2.png)
+
+__Non-Local Patch (left) and Deep Prior (right)__
+
+![patch](https://github.com/fmerizzi/inpainting_restoration/blob/main/images/patch/detail2_sebastiano_patch.png)
+![prior](https://github.com/fmerizzi/inpainting_restoration/blob/main/images/deep_prior/detail2_full256.jpeg)
 
 
 
