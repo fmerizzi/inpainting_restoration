@@ -93,6 +93,23 @@ __Non-Local Patch (left) and Deep Prior (right)__
 ![patch](https://github.com/fmerizzi/inpainting_restoration/blob/main/images/patch/detail1_lusuria_patch.png)
 ![prior](https://github.com/fmerizzi/inpainting_restoration/blob/main/images/deep_prior/detail1_Lusuria_full256skip.png)
 
+
+### San Sebastiano Detail 3 (text cleaning)
+
+__mask__
+
+![mask](https://github.com/fmerizzi/inpainting_restoration/blob/main/images/detail3_Sebastiano_maskAndOriginal.png)
+
+__Telea's (left) and Sapiro's (right)__
+
+![telea](https://github.com/fmerizzi/inpainting_restoration/blob/main/images/local_algorithms/Telea_text.png)
+![telea](https://github.com/fmerizzi/inpainting_restoration/blob/main/images/local_algorithms/Sapiro_text.png)
+
+__Non-Local Patch (left) and Deep Prior (right)__
+
+![patch](https://github.com/fmerizzi/inpainting_restoration/blob/main/images/patch/detail3_sebatiano_patch.png)
+![prior](https://github.com/fmerizzi/inpainting_restoration/blob/main/images/deep_prior/detail3_full256_deepprior.jpeg)
+
 ### San Sebastiano Detail 2 
 
 __mask__
