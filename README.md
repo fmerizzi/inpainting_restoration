@@ -33,8 +33,16 @@ Gulliermo Sapiro's algorithm (Navier-Stokes, Fluid Dynamics)
 - Minimize highly non-convex functional, it specifies that a good solution to the inpainting problem should be an image where each patch is very similiar to its nearest neighbour in the unoccluded area. Iterations are performed in a multi-scale framework which yields globally coherent results. 
 
 we want to minimize the following highly non-convex functional:
+
 <img src="https://render.githubusercontent.com/render/math?math=\Large E(u,\phi ) = \sum_{p\in N_p} d^2(W_p, W_{p+ \phi (p)})">
+
 with H patch, and p pixel of H. and d is the distance to its nearest neighbour in the unoccluded region. 
+The solution is obtained via iterated alternating minimization as well as multi scale framework, corresponding to:
+
+1) nearest neighbour search 
+2) image reconstruction
+
+
 
 
 ## Deep image prior 
