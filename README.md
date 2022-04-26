@@ -58,10 +58,23 @@ In our tests we focused on deep generative "hourglass" networks, and we are limi
 ### comparing skip connections against no skip connections
 For this test the network is an encoder-decoder structure made with 5 layers of downsample and 5 layers of upsample, all with a size of 256, with kernel size of 3x3 and stride of 1.
 
+__no skip connection__
+
+![preparing](https://github.com/fmerizzi/inpainting_restoration/blob/main/images/detail3_full256_noSKip.jpeg)
+
+__full skip connections__
+
+![preparing](https://github.com/fmerizzi/inpainting_restoration/blob/main/images/detail1_Lusuria_full256skip.png)
+
+As we can see, ther skip connection reduce the detail in the inpainted areas, but in our situation some "smoothing" is not as bad thing. 
 
 ### Inpainting figurative details
 __original image, mask and combined version__
 
+
+![preparing](https://github.com/fmerizzi/inpainting_restoration/blob/main/images/prepare.png)
+
+![preparing](https://github.com/fmerizzi/inpainting_restoration/blob/main/images/prepare.png)
 
 ![preparing](https://github.com/fmerizzi/inpainting_restoration/blob/main/images/prepare.png)
 
