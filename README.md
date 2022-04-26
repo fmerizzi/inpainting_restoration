@@ -64,7 +64,7 @@ Regarding network architecture, we notice that full layers bring better results 
 ### comparing skip connections against no skip connections
 For this test the network is an encoder-decoder structure made with 5 layers of downsample and 5 layers of upsample, all with a size of 256, with kernel size of 3x3 and stride of 1.
 
-__no skip connection (left) and full skip connections (right) __
+__no skip connection (left) and full skip connections (right)__
 
 ![preparing](https://github.com/fmerizzi/inpainting_restoration/blob/main/images/deep_prior/detail1_full256_noSKip.jpeg)
 ![preparing](https://github.com/fmerizzi/inpainting_restoration/blob/main/images/deep_prior/detail1_Lusuria_full256skip.png)
