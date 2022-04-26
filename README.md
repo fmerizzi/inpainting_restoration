@@ -82,12 +82,12 @@ __mask__
 
 ![mask](https://github.com/fmerizzi/inpainting_restoration/blob/main/images/detail1_lusuria_maskAndOriginal.png)
 
-__Telea's and Sapiro's__
+__Telea's (left) and Sapiro's (right)__
 
 ![telea](https://github.com/fmerizzi/inpainting_restoration/blob/main/images/local_algorithms/Telea_Lusuria.png)
 ![telea](https://github.com/fmerizzi/inpainting_restoration/blob/main/images/local_algorithms/Sapiro_Lusuria.png)
 
-__Non-Local Patch and Deep Prior__
+__Non-Local Patch (left) and Deep Prior (right)__
 
 ![patch](https://github.com/fmerizzi/inpainting_restoration/blob/main/images/patch/detail1_lusuria_patch.png)
 ![prior](https://github.com/fmerizzi/inpainting_restoration/blob/main/images/deep_prior/detail1_Lusuria_full256skip.png)
