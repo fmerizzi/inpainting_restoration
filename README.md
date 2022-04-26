@@ -104,6 +104,8 @@ __Telea's (left) and Sapiro's (right)__
 
 ![telea](https://github.com/fmerizzi/inpainting_restoration/blob/main/images/local_algorithms/Telea_text.png)
 ![telea](https://github.com/fmerizzi/inpainting_restoration/blob/main/images/local_algorithms/Sapiro_text.png)
+![telea](https://github.com/fmerizzi/inpainting_restoration/blob/main/images/local_algorithms/Telea_text.png)
+![telea](https://github.com/fmerizzi/inpainting_restoration/blob/main/images/local_algorithms/Sapiro_text.png)
 
 __Non-Local Patch (left) and Deep Prior (right)__
 
