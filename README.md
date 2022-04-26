@@ -28,11 +28,11 @@ __original image, mask and combined version__
 
 ## local methods 
 
-Alexandru Telea's method (fast marching)
-![preparing](https://github.com/fmerizzi/inpainting_restoration/blob/main/images/local_algorithms/AlexandruTelea.png)
+As local approaches we test Alexandru Telea's algorithm based on the Fast Marching method, this algorithm starts from the boundary of the occluded region and goes inside the region gradually filling everything in the boundary first. It takes a small neighbourhood around the pixel on the neighbourhood to be inpainted. This pixel is replaced by normalized weighted sum of all the known pixels in the neighbourhood.
 
-Gulliermo Sapiro's algorithm (Navier-Stokes, Fluid Dynamics)
-![preparing](https://github.com/fmerizzi/inpainting_restoration/blob/main/images/local_algorithms/Navier-Stokes.png)
+we also test Sapiro's algorithm based on Navier Stokes and fluid dynamics, it first travels along the edges from known regions to unknown regions (because edges are meant to be continuous). It continues isophotes (lines joining points with same intensity, just like contours joins points with same elevation) while matching gradient vectors at the boundary of the inpainting region. 
+
+Both this algorithms are freely available in the openCV python libray. 
 
 ## Non-Local Patch-Based Image Inpainting 
 - Minimize highly non-convex functional, it specifies that a good solution to the inpainting problem should be an image where each patch is very similiar to its nearest neighbour in the unoccluded area. Iterations are performed in a multi-scale framework which yields globally coherent results. 
