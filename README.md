@@ -79,3 +79,28 @@ As we can see, ther skip connection reduce the detail in the inpainted areas, bu
 
 ## general comparison
 
+### Lusuria Detail 
+
+
+__Alexandru Telea's local algorithm__
+
+![preparing](https://github.com/fmerizzi/inpainting_restoration/blob/main/images/local_algorithms/Telea_Lusuria.png)
+
+
+__Sapiro's local algorithm__
+
+![preparing](https://github.com/fmerizzi/inpainting_restoration/blob/main/images/local_algorithms/Sapiro_Lusuria.png)
+
+
+__Non-Local Patch based image inpainting__
+
+![preparing](https://github.com/fmerizzi/inpainting_restoration/blob/main/images/patch/detail1_lusuria_patch.png)
+
+
+__Deep prior with skip__
+
+![preparing](https://github.com/fmerizzi/inpainting_restoration/blob/main/images/detail1_Lusuria_full256skip.png)
+
+
+
+
